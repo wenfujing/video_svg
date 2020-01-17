@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <fm.jiecao.jcvideoplayer_lib.JCVideoPlayer
+                android:id="@+id/videocontroller1"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="相关描述————吱吱吱" />
+
+            <fm.jiecao.jcvideoplayer_lib.JCVideoPlayer
+                android:id="@+id/videocontroller2"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="2dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="start mp3" />
+
+            <fm.jiecao.jcvideoplayer_lib.JCVideoPlayer
+                android:id="@+id/videocontroller3"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="2dp" />
+
+            <Button
+                android:id="@+id/to_fullscreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="跳转到全屏-activity" />
+
+            <Button
+                android:id="@+id/to_changecolor_activity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Set skin" />
+
+            <Button
+                android:id="@+id/to_list_activity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="List demo" />
+
+            <Button
+                android:id="@+id/to_list_viewpager_activity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="List and Viewpager demo" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
